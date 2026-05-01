@@ -9,7 +9,8 @@
     "generate:article": "tsx scripts/generate_article_packet.ts",
     "publish:dry": "tsx scripts/publish_substack_dry_run.ts",
     "sync:airtable": "tsx scripts/sync_airtable.ts",
-    "brief": "tsx scripts/generate_daily_brief.ts"
+    "brief": "tsx scripts/generate_daily_brief.ts",
+    "export:mission-control": "tsx scripts/export_mission_control.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

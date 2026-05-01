@@ -4,6 +4,8 @@
 
 Turn raw thoughts into reusable article packets, GitHub markdown records, Airtable pipeline audits, Notion mirror inputs, voice/video asset prompts, and future Substack publishing workflows.
 
+Command Center is the authority. This engine is an external artifact producer that emits packets, reports, briefs, scripts, and Mission Control artifact JSON. It does not build Mission Control UI or duplicate Command Center approval logic.
+
 ## Current Phase
 
 This scaffold builds dry-run foundations only:

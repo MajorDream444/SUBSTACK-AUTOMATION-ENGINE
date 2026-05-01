@@ -4,13 +4,21 @@ import { isValidLane } from "./lanes.js";
 import { createSlug } from "./slug.js";
 import { readText, writeText } from "../utils/fs.js";
 import { timestamp } from "../utils/dates.js";
+import { writeArtifactForMarkdown } from "../artifacts/artifactContract.js";
 
 const GenerateArticlePacketInput = z.object({
   file: z.string().min(1),
   title: z.string().optional(),
   lane: z.string().optional(),
   sourceUrl: z.string().optional(),
-  sourceTitle: z.string().optional()
+  sourceTitle: z.string().optional(),
+  whatTheySaid: z.string().optional(),
+  whatTheyMissed: z.string().optional(),
+  systemUnderneath: z.string().optional(),
+  whyItMatters: z.string().optional(),
+  factCheckNotes: z.string().optional(),
+  riskNotes: z.string().optional(),
+  skipArtifact: z.boolean().optional()
 });
 
 export type GenerateArticlePacketInput = z.infer<typeof GenerateArticlePacketInput>;
@@ -41,6 +49,12 @@ function reactionDoctrineBlock(input: {
   rawThought: string;
   sourceUrl?: string;
   sourceTitle?: string;
+  whatTheySaid?: string;
+  whatTheyMissed?: string;
+  systemUnderneath?: string;
+  whyItMatters?: string;
+  factCheckNotes?: string;
+  riskNotes?: string;
   validLane: boolean;
 }): string {
   if (!input.validLane) return "";
@@ -63,19 +77,19 @@ ${input.rawThought}
 
 ## What They Said
 
-TODO: Extract the direct claim, frame, or emotional charge from the source.
+${input.whatTheySaid ?? "TODO: Extract the direct claim, frame, or emotional charge from the source."}
 
 ## What They Missed
 
-TODO: Identify the unseen leverage, incentive, historical pattern, ownership layer, or system design underneath the clip.
+${input.whatTheyMissed ?? "TODO: Identify the unseen leverage, incentive, historical pattern, ownership layer, or system design underneath the clip."}
 
 ## The System Underneath
 
-TODO: Name the system beneath the moment. Map it to Major AI OS, culture, doctrine, diaspora, media, or leverage.
+${input.systemUnderneath ?? "TODO: Name the system beneath the moment. Map it to Major AI OS, culture, doctrine, diaspora, media, or leverage."}
 
 ## Why It Matters
 
-TODO: Explain why this moment matters beyond the timeline cycle.
+${input.whyItMatters ?? "TODO: Explain why this moment matters beyond the timeline cycle."}
 
 ## 3–5 Minute Video Script
 
@@ -106,11 +120,11 @@ TODO: Publish only this tightened version, not the raw rant. Preserve the raw ra
 
 ## Fact-Check Notes
 
-TODO: List claims that need verification before publishing. Add source links, dates, names, and uncertainty notes.
+${input.factCheckNotes ?? "TODO: List claims that need verification before publishing. Add source links, dates, names, and uncertainty notes."}
 
 ## Risk Notes
 
-TODO: Identify defamation, misinformation, privacy, copyright, platform, and unnecessary political-commentary risks.
+${input.riskNotes ?? "TODO: Identify defamation, misinformation, privacy, copyright, platform, and unnecessary political-commentary risks."}
 
 ## Reaction System Mapping
 - Major AI OS:
@@ -141,6 +155,8 @@ export async function generateArticlePacket(input: GenerateArticlePacketInput): 
     slug,
     status,
     lane,
+    source_url: parsed.sourceUrl ?? "",
+    source_title: parsed.sourceTitle ?? "",
     core_idea: firstSentence(rawThought),
     clear_angle: validLane
       ? `Turn this raw thought into a ${lane} Substack signal without losing Major's voice.`
@@ -164,11 +180,23 @@ export async function generateArticlePacket(input: GenerateArticlePacketInput): 
           rawThought,
           sourceUrl: parsed.sourceUrl,
           sourceTitle: parsed.sourceTitle,
+          whatTheySaid: parsed.whatTheySaid,
+          whatTheyMissed: parsed.whatTheyMissed,
+          systemUnderneath: parsed.systemUnderneath,
+          whyItMatters: parsed.whyItMatters,
+          factCheckNotes: parsed.factCheckNotes,
+          riskNotes: parsed.riskNotes,
           validLane
         })}`
       : basePacket;
 
   const outputPath = path.join("content", "articles", `${slug}.md`);
   await writeText(outputPath, packet);
+  if (!parsed.skipArtifact) {
+    await writeArtifactForMarkdown({
+      markdownPath: outputPath,
+      artifactType: lane === "Reaction Doctrine" ? "reaction_packet" : "substack_packet"
+    });
+  }
   return outputPath;
 }

@@ -2,6 +2,7 @@ import path from "node:path";
 import { generateArticlePacket } from "./articlePacket.js";
 import { createSlug } from "./slug.js";
 import { publishDryRun } from "../substack/dryRunPublisher.js";
+import { writeArtifactForMarkdown } from "../artifacts/artifactContract.js";
 import type { AirtableRecord } from "../airtable/client.js";
 import {
   isScheduledReactionDoctrine,
@@ -83,7 +84,10 @@ function shortClipHooks(record: ReturnType<typeof reactionDoctrineRecord>): stri
 async function locateOrGenerateArticle(record: ReturnType<typeof reactionDoctrineRecord>): Promise<string> {
   const slug = record.slug || createSlug(record.title);
   const articlePath = path.join("content", "articles", `${slug}.md`);
-  if (await fileExists(articlePath)) return articlePath;
+  if (await fileExists(articlePath)) {
+    const existing = await readText(articlePath);
+    if (!existing.includes("TODO: Name the system beneath the moment")) return articlePath;
+  }
 
   const rawPath = path.join("content", "raw", `${slug}-source.txt`);
   if (!(await fileExists(rawPath))) {
@@ -95,7 +99,14 @@ async function locateOrGenerateArticle(record: ReturnType<typeof reactionDoctrin
     title: record.title,
     lane: "Reaction Doctrine",
     sourceUrl: record.sourceUrl,
-    sourceTitle: record.sourceTitle || record.title
+    sourceTitle: record.sourceTitle || record.title,
+    whatTheySaid: record.whatTheySaid,
+    whatTheyMissed: record.whatTheyMissed,
+    systemUnderneath: record.systemUnderneath,
+    whyItMatters: record.whyItMatters,
+    factCheckNotes: record.factCheckNotes,
+    riskNotes: record.riskNotes,
+    skipArtifact: true
   });
 }
 
@@ -113,6 +124,12 @@ export async function runReactionDoctrineDryRun(records: AirtableRecord[]): Prom
 
     if (errors.length === 0) {
       articlePath = await locateOrGenerateArticle(record);
+      await writeArtifactForMarkdown({
+        markdownPath: articlePath,
+        artifactType: "reaction_packet",
+        airtableRecordId: record.id,
+        sourceUrl: record.sourceUrl
+      });
       dryRunReportPath = await publishDryRun({ file: articlePath });
     }
 

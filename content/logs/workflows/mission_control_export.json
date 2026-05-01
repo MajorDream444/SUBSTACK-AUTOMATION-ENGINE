@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "generated_at": "2026-05-01T06:17:14.580Z",
+    "total_artifacts": 2,
+    "by_status": {
+      "needs_review": 1,
+      "blocked": 1
+    },
+    "by_lane": {
+      "Reaction Doctrine": 2
+    },
+    "needs_review": 2,
+    "blocked": 1,
+    "auto_candidates": 0,
+    "high_risk_review_required": 0
+  },
+  "artifacts": [
+    {
+      "artifact_id": "3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+      "mission_id": "M-0501",
+      "artifact_type": "reaction_packet",
+      "source": "SUBSTACK_ENGINE",
+      "status": "needs_review",
+      "lane": "Reaction Doctrine",
+      "title": "Fixture Reaction Doctrine Clip",
+      "source_url": "https://example.com/reaction-source",
+      "github_path": "content/articles/fixture-reaction-doctrine-clip.md",
+      "airtable_record_id": "recReactionDoctrineFixture",
+      "notion_page_id": "",
+      "requires_major_review": true,
+      "score": 77,
+      "confidence": 62,
+      "risk_level": "medium",
+      "publish_mode": "review",
+      "next_action": "Route to Command Center review queue."
+    },
+    {
+      "artifact_id": "e79f8de5-b553-4b4b-8e4f-0ebaf161ba4b",
+      "mission_id": "M-0501",
+      "artifact_type": "reaction_packet",
+      "source": "SUBSTACK_ENGINE",
+      "status": "blocked",
+      "lane": "Reaction Doctrine",
+      "title": "Sample Reaction Doctrine",
+      "source_url": "https://example.com/source",
+      "github_path": "content/articles/sample-reaction-doctrine.md",
+      "airtable_record_id": "",
+      "notion_page_id": "",
+      "requires_major_review": true,
+      "score": 50,
+      "confidence": 15,
+      "risk_level": "medium",
+      "publish_mode": "block",
+      "next_action": "Strengthen the Reaction Doctrine system-underneath section before Command Center review."
+    }
+  ]
+}

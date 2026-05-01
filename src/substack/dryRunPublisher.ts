@@ -3,6 +3,7 @@ import { z } from "zod";
 import { isValidLane } from "../content/lanes.js";
 import { readText, writeText } from "../utils/fs.js";
 import { timestamp } from "../utils/dates.js";
+import { scoreArtifact } from "../artifacts/scoring.js";
 
 const PublishInput = z.object({
   file: z.string().min(1)
@@ -48,6 +49,10 @@ export async function publishDryRun(input: z.infer<typeof PublishInput>): Promis
   if (reactionMissingSections.length > 0) {
     errors.push(`Reaction Doctrine packet missing sections: ${reactionMissingSections.join(", ")}`);
   }
+  const reactionScore = lane === "Reaction Doctrine" ? scoreArtifact({ title, lane, markdown }) : undefined;
+  if (reactionScore?.systemUnderneathWeak) {
+    errors.push("Reaction Doctrine system-underneath section is missing or weak.");
+  }
 
   const report = [
     "# Substack Dry-Run Report",
@@ -71,6 +76,11 @@ export async function publishDryRun(input: z.infer<typeof PublishInput>): Promis
       ? reactionMissingSections.length === 0
         ? "- Required Reaction Doctrine sections are present."
         : `- Missing sections: ${reactionMissingSections.join(", ")}`
+      : "",
+    lane === "Reaction Doctrine"
+      ? reactionScore?.systemUnderneathWeak
+        ? "- System underneath is weak; artifact governance will block this packet."
+        : "- System underneath is present."
       : "",
     lane === "Reaction Doctrine" ? "- Live posting remains disabled." : "",
     "",

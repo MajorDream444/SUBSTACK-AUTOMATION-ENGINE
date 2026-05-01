@@ -99,3 +99,42 @@ Results:
 - Reaction Doctrine pipeline summary created at `content/logs/workflows/reaction_doctrine_pipeline.md`.
 - Daily brief regenerated.
 - No live publishing, live posting, or Airtable writes were attempted.
+
+## Update — Mission Control Artifact Contract
+
+Changed:
+
+- Added `src/artifacts/artifactContract.ts`.
+- Added `src/artifacts/scoring.ts`.
+- Added `src/artifacts/riskGovernance.ts`.
+- Added `scripts/export_mission_control.ts`.
+- Added `docs/MISSION_CONTROL_INTERFACE.md`.
+- Packet generation now emits Mission Control-compatible artifact JSON files under `content/logs/agents/artifacts/`.
+- Mission Control export writes `content/logs/workflows/mission_control_export.json` and `content/logs/workflows/mission_control_export.md`.
+- SYSTEM_CORE, AGENTS, README, and Substack docs now state that Command Center is the authority and this repo is an external artifact producer.
+
+Verification:
+
+- `npm run build`
+- `npm run generate:article -- --file content/raw/sample-reaction-doctrine.txt --title "Sample Reaction Doctrine" --lane "Reaction Doctrine" --source-url "https://example.com/source" --source-title "Example Cultural Clip"`
+- `npm run sync:airtable -- --fixture content/research/reaction_doctrine_airtable_fixture.json`
+- `npm run export:mission-control`
+- `npm run publish:dry -- --file content/articles/sample-reaction-doctrine.md`
+- `npm run brief`
+- secret scan for populated API key/password assignments
+
+Artifact contract summary:
+
+- Total artifacts exported: 2
+- Needs review: 2
+- Blocked: 1
+- Auto candidates: 0
+- High risk review required: 0
+- Reaction Doctrine fixture artifact: `needs_review`, `publish_mode = review`
+- Sample Reaction Doctrine artifact: `blocked`, `publish_mode = block`, score capped at 50 because system-underneath is weak
+
+Known boundary:
+
+- Command Center remains the authority.
+- This repo does not build Mission Control UI, global approval UI, or Command Center approval logic.
+- `delay` publish mode is reserved for future and is not activated.

@@ -7,6 +7,8 @@ lane: Reaction Doctrine
 tags:
 publish_date:
 substack_url:
+source_url: https://example.com/reaction-source
+source_title: Example Viral Culture Clip
 voice_asset_url:
 video_asset_url:
 ---
@@ -99,7 +101,7 @@ Map to one:
 [[Diaspora Builders]]
 
 # Handoff Log
-Date: 2026-05-01T05:05:23.727Z
+Date: 2026-05-01T06:16:17.544Z
 Agent: Codex
 Next Action: Review packet metadata, then run Substack dry-run.
 
@@ -136,19 +138,19 @@ If builders cannot read the system underneath viral moments, they become content
 
 ## What They Said
 
-TODO: Extract the direct claim, frame, or emotional charge from the source.
+They framed the clip as a simple argument about who was right in the moment.
 
 ## What They Missed
 
-TODO: Identify the unseen leverage, incentive, historical pattern, ownership layer, or system design underneath the clip.
+They missed the incentive system that rewards conflict, compression, and identity performance.
 
 ## The System Underneath
 
-TODO: Name the system beneath the moment. Map it to Major AI OS, culture, doctrine, diaspora, media, or leverage.
+A media leverage loop where pain becomes attention, attention becomes distribution, and distribution becomes market power.
 
 ## Why It Matters
 
-TODO: Explain why this moment matters beyond the timeline cycle.
+If builders cannot read the system underneath viral moments, they become content for the machine instead of operators of their own signal.
 
 ## 3–5 Minute Video Script
 
@@ -179,11 +181,11 @@ TODO: Publish only this tightened version, not the raw rant. Preserve the raw ra
 
 ## Fact-Check Notes
 
-TODO: List claims that need verification before publishing. Add source links, dates, names, and uncertainty notes.
+Verify source date, speaker names, clip context, and whether the source has been edited.
 
 ## Risk Notes
 
-TODO: Identify defamation, misinformation, privacy, copyright, platform, and unnecessary political-commentary risks.
+Avoid defamation, avoid claims about private intent, and avoid turning the analysis into generic political commentary.
 
 ## Reaction System Mapping
 - Major AI OS:

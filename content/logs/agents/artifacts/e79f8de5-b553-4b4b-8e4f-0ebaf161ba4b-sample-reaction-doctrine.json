@@ -1,0 +1,19 @@
+{
+  "artifact_id": "e79f8de5-b553-4b4b-8e4f-0ebaf161ba4b",
+  "mission_id": "M-0501",
+  "artifact_type": "reaction_packet",
+  "source": "SUBSTACK_ENGINE",
+  "status": "blocked",
+  "lane": "Reaction Doctrine",
+  "title": "Sample Reaction Doctrine",
+  "source_url": "https://example.com/source",
+  "github_path": "content/articles/sample-reaction-doctrine.md",
+  "airtable_record_id": "",
+  "notion_page_id": "",
+  "requires_major_review": true,
+  "score": 50,
+  "confidence": 15,
+  "risk_level": "medium",
+  "publish_mode": "block",
+  "next_action": "Strengthen the Reaction Doctrine system-underneath section before Command Center review."
+}

@@ -1,0 +1,19 @@
+{
+  "artifact_id": "3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+  "mission_id": "M-0501",
+  "artifact_type": "reaction_packet",
+  "source": "SUBSTACK_ENGINE",
+  "status": "needs_review",
+  "lane": "Reaction Doctrine",
+  "title": "Fixture Reaction Doctrine Clip",
+  "source_url": "https://example.com/reaction-source",
+  "github_path": "content/articles/fixture-reaction-doctrine-clip.md",
+  "airtable_record_id": "recReactionDoctrineFixture",
+  "notion_page_id": "",
+  "requires_major_review": true,
+  "score": 77,
+  "confidence": 62,
+  "risk_level": "medium",
+  "publish_mode": "review",
+  "next_action": "Route to Command Center review queue."
+}

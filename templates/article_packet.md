@@ -7,6 +7,8 @@ lane: {{lane}}
 tags:
 publish_date:
 substack_url:
+source_url: {{source_url}}
+source_title: {{source_title}}
 voice_asset_url:
 video_asset_url:
 ---

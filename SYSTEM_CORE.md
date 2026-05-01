@@ -6,6 +6,8 @@ Build the automation engine that turns Major Dream Williams' raw thoughts into S
 
 This is not a generic content tool. This is a Major AI OS system component.
 
+Command Center is the authority. `SUBSTACK-AUTOMATION-ENGINE` is an external artifact producer. It does not build Mission Control UI, global approval UI, or duplicate Command Center logic.
+
 ## Operating Sentence
 
 ChatGPT plans. Codex builds. OpenClaw runs. Hanzo thinks. GitHub remembers. Airtable tracks. Notion shows. Obsidian connects. n8n automates. Substack broadcasts.
@@ -34,6 +36,7 @@ ChatGPT plans. Codex builds. OpenClaw runs. Hanzo thinks. GitHub remembers. Airt
 6. Every agent leaves a handoff
 7. Never publish unmapped content
 8. Default to dry-run until live mode is explicitly enabled
+9. Mission Control approval belongs to Command Center
 
 ## Execution Loop
 

@@ -7,6 +7,8 @@ lane: Reaction Doctrine
 tags:
 publish_date:
 substack_url:
+source_url: https://example.com/source
+source_title: Example Cultural Clip
 voice_asset_url:
 video_asset_url:
 ---
@@ -81,7 +83,7 @@ Map to one:
 [[Diaspora Builders]]
 
 # Handoff Log
-Date: 2026-05-01T04:41:57.401Z
+Date: 2026-05-01T06:17:13.520Z
 Agent: Codex
 Next Action: Review packet metadata, then run Substack dry-run.
 

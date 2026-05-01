@@ -4,6 +4,8 @@ The Substack Automation Engine turns Major Dream Williams' raw thoughts into reu
 
 This is a Major AI OS component, not a generic content tool.
 
+Command Center is the authority. This repo is an external artifact producer.
+
 ## System Stack
 
 - ChatGPT = plans
@@ -86,8 +88,10 @@ Rules:
 ## Safety Rules
 
 - GitHub is source of truth.
+- Command Center is authority.
 - Never overwrite the original raw thought.
 - Never publish unmapped content.
+- Nothing publishes without Mission Control approval unless `publish_mode = auto` and Command Center later enables auto rules.
 - Default publishing to dry-run.
 - Do not add secrets.
 - Do not invent API keys.

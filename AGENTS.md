@@ -9,6 +9,8 @@ Always read `SYSTEM_CORE.md` first.
 - Build the automation engine, not random content tools.
 - Preserve raw thoughts exactly.
 - Treat GitHub markdown as the durable source of truth.
+- Treat Command Center as the authority.
+- Do not build Mission Control UI, global approval UI, or duplicate Command Center logic.
 
 ## Handoffs
 
@@ -28,6 +30,7 @@ Include:
 - If lane is missing or invalid, set status to `blocked`.
 - Reaction Doctrine must extract the system underneath the source and must not become generic political commentary.
 - Reaction Doctrine preserves raw rant/source material and publishes only the tightened version.
+- Nothing publishes without Mission Control approval unless `publish_mode = auto` and Command Center later enables auto rules.
 - Do not expose or log secrets.
 - Do not add real credentials to repo files.
 
