@@ -1,24 +1,24 @@
 # Substack Dry-Run Report
 
-Generated: 2026-05-01T06:17:14.974Z
-File: content/articles/sample-reaction-doctrine.md
-Title: Sample Reaction Doctrine
-Slug: sample-reaction-doctrine
+Generated: 2026-05-01T17:43:03.467Z
+File: content/articles/fixture-reaction-doctrine-clip.md
+Title: Fixture Reaction Doctrine Clip
+Slug: fixture-reaction-doctrine-clip
 Lane: Reaction Doctrine
 Status: draft
 Publish mode: dry-run only
 
 ## Result
-- Not ready to publish.
+- Ready for future dry-run publish flow.
 - Reaction Doctrine: publish only the tightened Substack Article Version, not the preserved raw rant/source.
 
 ## Reaction Doctrine Dry-Run
 - Required Reaction Doctrine sections are present.
-- System underneath is weak; artifact governance will block this packet.
+- System underneath is present.
 - Live posting remains disabled.
 
 ## Errors
-- Reaction Doctrine system-underneath section is missing or weak.
+- None
 
 ## Safety
 - No live publishing was attempted.

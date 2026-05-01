@@ -14,33 +14,27 @@ Substack Automation Engine scaffold is active in dry-run mode.
 - Raw thoughts: 3
 - Article packets: 3
 - Published records: 0
-- Workflow logs: 7
+- Workflow logs: 10
 
 ## Repo Changes
 
 ```
 M AGENTS.md
  M README.md
- M SYSTEM_CORE.md
- M content/articles/fixture-reaction-doctrine-clip.md
- M content/articles/sample-reaction-doctrine.md
- M content/logs/daily/2026-05-01-daily-brief.md
- M content/logs/workflows/airtable_audit.md
- M content/logs/workflows/fixture-reaction-doctrine-clip-reaction-doctrine.md
- M content/logs/workflows/reaction_doctrine_pipeline.md
+ M content/logs/agents/artifacts/3dd5955e-d00d-45bf-af2c-5740f1046b0d-fixture-reaction-doctrine-clip.json
+ M content/logs/agents/artifacts/e79f8de5-b553-4b4b-8e4f-0ebaf161ba4b-sample-reaction-doctrine.json
  M content/logs/workflows/substack_dry_run_report.md
- M docs/SUBSTACK_AUTOMATION_ENGINE.md
+ M docs/HANDOFF.md
+ M docs/MISSION_CONTROL_INTERFACE.md
  M package.json
- M src/content/articlePacket.ts
- M src/content/reactionDoctrine.ts
- M src/substack/dryRunPublisher.ts
- M templates/article_packet.md
-?? content/logs/agents/artifacts/
-?? content/logs/workflows/mission_control_export.json
-?? content/logs/workflows/mission_control_export.md
-?? docs/MISSION_CONTROL_INTERFACE.md
-?? scripts/export_mission_control.ts
-?? src/artifacts/
+ M src/artifacts/artifactContract.ts
+ M src/artifacts/riskGovernance.ts
+?? content/logs/workflows/decision_import_summary.json
+?? content/logs/workflows/mission_control_decision_import.md
+?? content/logs/workflows/mission_control_decisions.json
+?? docs/MISSION_CONTROL_DECISION_IMPORT.md
+?? scripts/import_mission_control_decisions.ts
+?? src/artifacts/decisionImport.ts
 ```
 
 ## Airtable State

@@ -79,3 +79,17 @@ Outputs:
 - `content/logs/workflows/mission_control_export.md`
 
 The export includes total artifacts, counts by status, counts by lane, review counts, blocked counts, auto candidates, and high-risk review requirements.
+
+## Decision Import
+
+Mission Control can export decisions into:
+
+`content/logs/workflows/mission_control_decisions.json`
+
+Run:
+
+```bash
+npm run import:decisions
+```
+
+The Substack Engine updates local artifact JSON status and writes import logs. `publish_requested` runs dry-run publishing only.

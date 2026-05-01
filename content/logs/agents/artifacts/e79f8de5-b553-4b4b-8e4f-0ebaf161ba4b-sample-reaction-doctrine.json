@@ -3,7 +3,7 @@
   "mission_id": "M-0501",
   "artifact_type": "reaction_packet",
   "source": "SUBSTACK_ENGINE",
-  "status": "blocked",
+  "status": "needs_rewrite",
   "lane": "Reaction Doctrine",
   "title": "Sample Reaction Doctrine",
   "source_url": "https://example.com/source",
@@ -15,5 +15,5 @@
   "confidence": 15,
   "risk_level": "medium",
   "publish_mode": "block",
-  "next_action": "Strengthen the Reaction Doctrine system-underneath section before Command Center review."
+  "next_action": "Rewrite the system-underneath section before review."
 }

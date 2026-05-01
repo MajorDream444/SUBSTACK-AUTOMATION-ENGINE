@@ -70,6 +70,12 @@ Test the Reaction Doctrine Airtable dry-run path with the local fixture:
 npm run sync:airtable -- --fixture content/research/reaction_doctrine_airtable_fixture.json
 ```
 
+Import Mission Control decisions:
+
+```bash
+npm run import:decisions
+```
+
 ## Future Live Publishing Workflow
 
 When live publishing is built later, Airtable records with `Status = Scheduled` will become automatic publish candidates. Live mode must remain opt-in and must never publish blocked or unmapped content.

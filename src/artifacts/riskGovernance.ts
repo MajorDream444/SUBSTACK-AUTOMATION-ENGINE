@@ -2,7 +2,7 @@ import type { ArtifactScore } from "./scoring.js";
 
 export type RiskLevel = "low" | "medium" | "high";
 export type PublishMode = "auto" | "review" | "block" | "delay";
-export type ArtifactStatus = "draft" | "ready" | "needs_review" | "scheduled" | "published" | "blocked";
+export type ArtifactStatus = "draft" | "ready" | "needs_review" | "needs_rewrite" | "scheduled" | "scheduled_dry_run" | "published" | "blocked";
 
 export type GovernanceInput = {
   lane: string;

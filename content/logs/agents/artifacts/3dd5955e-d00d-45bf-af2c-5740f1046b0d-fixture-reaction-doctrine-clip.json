@@ -3,7 +3,7 @@
   "mission_id": "M-0501",
   "artifact_type": "reaction_packet",
   "source": "SUBSTACK_ENGINE",
-  "status": "needs_review",
+  "status": "scheduled_dry_run",
   "lane": "Reaction Doctrine",
   "title": "Fixture Reaction Doctrine Clip",
   "source_url": "https://example.com/reaction-source",
@@ -15,5 +15,5 @@
   "confidence": 62,
   "risk_level": "medium",
   "publish_mode": "review",
-  "next_action": "Route to Command Center review queue."
+  "next_action": "Run dry-run publish report only."
 }

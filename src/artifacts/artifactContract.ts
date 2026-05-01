@@ -12,7 +12,7 @@ export const ArtifactContractSchema = z.object({
   mission_id: z.string(),
   artifact_type: z.enum(["substack_packet", "reaction_packet", "video_script", "publish_report", "daily_content_brief"]),
   source: z.literal("SUBSTACK_ENGINE"),
-  status: z.enum(["draft", "ready", "needs_review", "scheduled", "published", "blocked"]),
+  status: z.enum(["draft", "ready", "needs_review", "needs_rewrite", "scheduled", "scheduled_dry_run", "published", "blocked"]),
   lane: z.enum(["BWYH", "Contour", "SAF", "Major AI OS", "Doctrine", "Reaction Doctrine"]),
   title: z.string(),
   source_url: z.string(),
@@ -116,4 +116,8 @@ export async function writeArtifactForMarkdown(input: {
 
 export async function readArtifact(filePath: string): Promise<ArtifactContract> {
   return ArtifactContractSchema.parse(JSON.parse(await readText(filePath)));
+}
+
+export async function writeArtifact(filePath: string, artifact: ArtifactContract): Promise<void> {
+  await writeText(filePath, `${JSON.stringify(ArtifactContractSchema.parse(artifact), null, 2)}\n`);
 }

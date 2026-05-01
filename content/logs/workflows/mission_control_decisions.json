@@ -1,0 +1,20 @@
+{
+  "decisions": [
+    {
+      "artifact_id": "3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+      "decision": "publish_requested",
+      "mission_id": "M-0501",
+      "decided_by": "Mission Control Fixture",
+      "reason": "Fixture artifact is ready for dry-run publish validation.",
+      "next_action": "Run dry-run publish report only."
+    },
+    {
+      "artifact_id": "e79f8de5-b553-4b4b-8e4f-0ebaf161ba4b",
+      "decision": "rewrite_requested",
+      "mission_id": "M-0501",
+      "decided_by": "Mission Control Fixture",
+      "reason": "System-underneath section is weak.",
+      "next_action": "Rewrite the system-underneath section before review."
+    }
+  ]
+}

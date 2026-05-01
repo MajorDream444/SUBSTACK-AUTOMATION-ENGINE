@@ -138,3 +138,29 @@ Known boundary:
 - Command Center remains the authority.
 - This repo does not build Mission Control UI, global approval UI, or Command Center approval logic.
 - `delay` publish mode is reserved for future and is not activated.
+
+## Update — Mission Control Decision Import
+
+Changed:
+
+- Added `src/artifacts/decisionImport.ts`.
+- Added `scripts/import_mission_control_decisions.ts`.
+- Added `docs/MISSION_CONTROL_DECISION_IMPORT.md`.
+- Added `npm run import:decisions`.
+
+Behavior:
+
+- Reads `content/logs/workflows/mission_control_decisions.json`.
+- Matches decisions by `artifact_id`.
+- Updates local artifact JSON status:
+  - `approved` -> `ready`
+  - `rejected` -> `blocked`
+  - `rewrite_requested` -> `needs_rewrite`
+  - `publish_requested` -> `scheduled_dry_run`
+- `publish_requested` runs dry-run report only.
+- Never live publishes.
+
+Verification is recorded in the latest workflow logs:
+
+- `content/logs/workflows/mission_control_decision_import.md`
+- `content/logs/workflows/decision_import_summary.json`
