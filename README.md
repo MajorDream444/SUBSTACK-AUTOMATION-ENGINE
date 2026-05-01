@@ -76,6 +76,12 @@ Import Mission Control decisions:
 npm run import:decisions
 ```
 
+Generate dry-run assets for approved or publish-requested artifacts:
+
+```bash
+npm run generate:assets
+```
+
 ## Future Live Publishing Workflow
 
 When live publishing is built later, Airtable records with `Status = Scheduled` will become automatic publish candidates. Live mode must remain opt-in and must never publish blocked or unmapped content.

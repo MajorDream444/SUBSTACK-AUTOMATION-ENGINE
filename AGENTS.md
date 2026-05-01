@@ -32,6 +32,7 @@ Include:
 - Reaction Doctrine preserves raw rant/source material and publishes only the tightened version.
 - Nothing publishes without Mission Control approval unless `publish_mode = auto` and Command Center later enables auto rules.
 - Mission Control `publish_requested` decisions run dry-run publishing only.
+- Asset generation is dry-run only and must not call external APIs.
 - Do not expose or log secrets.
 - Do not add real credentials to repo files.
 

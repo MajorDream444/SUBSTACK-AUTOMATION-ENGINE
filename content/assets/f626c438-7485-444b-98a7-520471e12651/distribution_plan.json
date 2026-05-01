@@ -1,0 +1,36 @@
+{
+  "artifact_id": "f626c438-7485-444b-98a7-520471e12651",
+  "mission_id": "M-0501",
+  "title": "Sample Major Thought Approved",
+  "lane": "Major AI OS",
+  "source_artifact_path": "content/articles/sample-major-thought-approved.md",
+  "generated_at": "2026-05-01T18:43:46.890Z",
+  "asset_state": "prepared",
+  "dry_run_only": true,
+  "substack": {
+    "status": "draft_only",
+    "suggested_caption": "Sample Major Thought Approved — tightened into a system-level signal.",
+    "asset_dependency": "video_script.md"
+  },
+  "instagram": {
+    "status": "draft_only",
+    "suggested_caption": "They saw the moment. We are reading the system.",
+    "asset_dependency": "hooks.json"
+  },
+  "youtube": {
+    "status": "draft_only",
+    "suggested_caption": "Sample Major Thought Approved — tightened into a system-level signal.",
+    "asset_dependency": "video_script.md"
+  },
+  "x": {
+    "status": "draft_only",
+    "suggested_caption": "The real story is the system underneath.",
+    "asset_dependency": "hooks.json"
+  },
+  "fanbase": {
+    "status": "draft_only",
+    "suggested_caption": "A doctrine note from the system layer.",
+    "asset_dependency": "voice_script.txt"
+  },
+  "notes": "Dry-run only. No platform posting or external API calls."
+}

@@ -1,0 +1,39 @@
+{
+  "artifact_id": "f626c438-7485-444b-98a7-520471e12651",
+  "mission_id": "M-0501",
+  "title": "Sample Major Thought Approved",
+  "lane": "Major AI OS",
+  "source_artifact_path": "content/articles/sample-major-thought-approved.md",
+  "generated_at": "2026-05-01T18:43:46.889Z",
+  "asset_state": "prepared",
+  "scenes": [
+    {
+      "scene_id": "S-01",
+      "duration_seconds": 12,
+      "visual_prompt": "Direct opening frame, clean title treatment, high contrast editorial style.",
+      "on_screen_text": "Sample Major Thought Approved",
+      "tool_target": "remotion"
+    },
+    {
+      "scene_id": "S-02",
+      "duration_seconds": 35,
+      "visual_prompt": "Slow paced narration frame with caption-led emphasis and subtle motion.",
+      "on_screen_text": "Read the system underneath.",
+      "tool_target": "heygen"
+    },
+    {
+      "scene_id": "S-03",
+      "duration_seconds": 45,
+      "visual_prompt": "Diagrammatic breakdown of surface moment to system layer to leverage.",
+      "on_screen_text": "Surface → System → Leverage",
+      "tool_target": "remotion"
+    },
+    {
+      "scene_id": "S-04",
+      "duration_seconds": 20,
+      "visual_prompt": "Closing CTA frame with restrained motion and clean typography.",
+      "on_screen_text": "Here, systems are what we build.",
+      "tool_target": "general"
+    }
+  ]
+}

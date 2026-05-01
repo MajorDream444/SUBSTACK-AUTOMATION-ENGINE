@@ -1,0 +1,81 @@
+{
+  "artifact_id": "3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+  "mission_id": "M-0501",
+  "title": "Fixture Reaction Doctrine Clip",
+  "lane": "Reaction Doctrine",
+  "source_artifact_path": "content/articles/fixture-reaction-doctrine-clip.md",
+  "generated_at": "2026-05-01T18:43:46.887Z",
+  "asset_state": "ready_for_distribution",
+  "hooks": [
+    {
+      "hook_id": "H-01",
+      "platform": "x",
+      "hook_text": "They saw the moment. They missed the system underneath.",
+      "angle": "system underneath",
+      "risk_level": "medium"
+    },
+    {
+      "hook_id": "H-02",
+      "platform": "instagram",
+      "hook_text": "Fixture Reaction Doctrine Clip: read it through culture signal, not noise.",
+      "angle": "culture signal",
+      "risk_level": "medium"
+    },
+    {
+      "hook_id": "H-03",
+      "platform": "youtube",
+      "hook_text": "Fixture Reaction Doctrine Clip: read it through doctrine, not noise.",
+      "angle": "doctrine",
+      "risk_level": "medium"
+    },
+    {
+      "hook_id": "H-04",
+      "platform": "substack",
+      "hook_text": "Fixture Reaction Doctrine Clip: read it through media leverage, not noise.",
+      "angle": "media leverage",
+      "risk_level": "medium"
+    },
+    {
+      "hook_id": "H-05",
+      "platform": "fanbase",
+      "hook_text": "Fixture Reaction Doctrine Clip: read it through diaspora reading, not noise.",
+      "angle": "diaspora reading",
+      "risk_level": "medium"
+    },
+    {
+      "hook_id": "H-06",
+      "platform": "x",
+      "hook_text": "Fixture Reaction Doctrine Clip: read it through builder lens, not noise.",
+      "angle": "builder lens",
+      "risk_level": "medium"
+    },
+    {
+      "hook_id": "H-07",
+      "platform": "instagram",
+      "hook_text": "Fixture Reaction Doctrine Clip: read it through public signal, not noise.",
+      "angle": "public signal",
+      "risk_level": "medium"
+    },
+    {
+      "hook_id": "H-08",
+      "platform": "youtube",
+      "hook_text": "Fixture Reaction Doctrine Clip: read it through hidden incentive, not noise.",
+      "angle": "hidden incentive",
+      "risk_level": "medium"
+    },
+    {
+      "hook_id": "H-09",
+      "platform": "substack",
+      "hook_text": "Fixture Reaction Doctrine Clip: read it through platform logic, not noise.",
+      "angle": "platform logic",
+      "risk_level": "medium"
+    },
+    {
+      "hook_id": "H-10",
+      "platform": "fanbase",
+      "hook_text": "Fixture Reaction Doctrine Clip: read it through Major AI OS, not noise.",
+      "angle": "Major AI OS",
+      "risk_level": "medium"
+    }
+  ]
+}

@@ -11,7 +11,10 @@
     "sync:airtable": "tsx scripts/sync_airtable.ts",
     "brief": "tsx scripts/generate_daily_brief.ts",
     "export:mission-control": "tsx scripts/export_mission_control.ts",
-    "import:decisions": "tsx scripts/import_mission_control_decisions.ts"
+    "import:decisions": "tsx scripts/import_mission_control_decisions.ts",
+    "generate:assets": "tsx scripts/generate_assets.ts",
+    "handoff:decisions": "npm run import:decisions",
+    "handoff:decisions:assets": "npm run handoff:decisions && npm run generate:assets"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

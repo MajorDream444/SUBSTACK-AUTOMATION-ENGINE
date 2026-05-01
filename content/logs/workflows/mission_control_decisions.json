@@ -15,6 +15,14 @@
       "decided_by": "Mission Control Fixture",
       "reason": "System-underneath section is weak.",
       "next_action": "Rewrite the system-underneath section before review."
+    },
+    {
+      "artifact_id": "f626c438-7485-444b-98a7-520471e12651",
+      "decision": "approved",
+      "mission_id": "M-0501",
+      "decided_by": "Mission Control Fixture",
+      "reason": "Approved low-risk Major AI OS sample for asset preparation.",
+      "next_action": "Prepare dry-run assets only."
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "artifact_id": "f626c438-7485-444b-98a7-520471e12651",
+  "mission_id": "M-0501",
+  "title": "Sample Major Thought Approved",
+  "lane": "Major AI OS",
+  "source_artifact_path": "content/articles/sample-major-thought-approved.md",
+  "generated_at": "2026-05-01T18:43:46.890Z",
+  "asset_state": "prepared",
+  "generated_files": [
+    "content/assets/f626c438-7485-444b-98a7-520471e12651/video_script.md",
+    "content/assets/f626c438-7485-444b-98a7-520471e12651/voice_script.txt",
+    "content/assets/f626c438-7485-444b-98a7-520471e12651/hooks.json",
+    "content/assets/f626c438-7485-444b-98a7-520471e12651/visual_prompts.json",
+    "content/assets/f626c438-7485-444b-98a7-520471e12651/distribution_plan.json",
+    "content/assets/f626c438-7485-444b-98a7-520471e12651/asset_manifest.json"
+  ],
+  "blocked_reason": ""
+}

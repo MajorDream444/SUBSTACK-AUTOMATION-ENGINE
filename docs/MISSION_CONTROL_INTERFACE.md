@@ -93,3 +93,16 @@ npm run import:decisions
 ```
 
 The Substack Engine updates local artifact JSON status and writes import logs. `publish_requested` runs dry-run publishing only.
+
+## Dry-Run Asset Generation
+
+After decision import, the engine can generate local assets for eligible artifacts:
+
+- `ready` artifacts produce `asset_state = prepared`
+- `scheduled_dry_run` artifacts produce `asset_state = ready_for_distribution`
+
+Outputs are written under:
+
+`content/assets/{artifact_id}/`
+
+The engine does not publish, post, render video, call voice APIs, or duplicate Mission Control approval logic.

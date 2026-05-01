@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-05-01T18:43:46.890Z",
+  "total_artifacts": 3,
+  "generated": 2,
+  "skipped": 1,
+  "prepared": 1,
+  "ready_for_distribution": 1,
+  "live_publish_attempted": false,
+  "external_api_calls": false,
+  "results": [
+    {
+      "artifact_id": "3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+      "mission_id": "M-0501",
+      "title": "Fixture Reaction Doctrine Clip",
+      "lane": "Reaction Doctrine",
+      "status": "scheduled_dry_run",
+      "asset_state": "ready_for_distribution",
+      "generated_files": [
+        "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/video_script.md",
+        "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/voice_script.txt",
+        "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/hooks.json",
+        "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/visual_prompts.json",
+        "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/distribution_plan.json",
+        "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/asset_manifest.json"
+      ],
+      "skipped": false
+    },
+    {
+      "artifact_id": "e79f8de5-b553-4b4b-8e4f-0ebaf161ba4b",
+      "mission_id": "M-0501",
+      "title": "Sample Reaction Doctrine",
+      "lane": "Reaction Doctrine",
+      "status": "needs_rewrite",
+      "generated_files": [],
+      "skipped": true,
+      "blocked_reason": "Status needs_rewrite is not eligible for asset generation."
+    },
+    {
+      "artifact_id": "f626c438-7485-444b-98a7-520471e12651",
+      "mission_id": "M-0501",
+      "title": "Sample Major Thought Approved",
+      "lane": "Major AI OS",
+      "status": "ready",
+      "asset_state": "prepared",
+      "generated_files": [
+        "content/assets/f626c438-7485-444b-98a7-520471e12651/video_script.md",
+        "content/assets/f626c438-7485-444b-98a7-520471e12651/voice_script.txt",
+        "content/assets/f626c438-7485-444b-98a7-520471e12651/hooks.json",
+        "content/assets/f626c438-7485-444b-98a7-520471e12651/visual_prompts.json",
+        "content/assets/f626c438-7485-444b-98a7-520471e12651/distribution_plan.json",
+        "content/assets/f626c438-7485-444b-98a7-520471e12651/asset_manifest.json"
+      ],
+      "skipped": false
+    }
+  ]
+}

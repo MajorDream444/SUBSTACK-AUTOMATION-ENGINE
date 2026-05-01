@@ -1,0 +1,39 @@
+{
+  "artifact_id": "3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+  "mission_id": "M-0501",
+  "title": "Fixture Reaction Doctrine Clip",
+  "lane": "Reaction Doctrine",
+  "source_artifact_path": "content/articles/fixture-reaction-doctrine-clip.md",
+  "generated_at": "2026-05-01T18:43:46.887Z",
+  "asset_state": "ready_for_distribution",
+  "scenes": [
+    {
+      "scene_id": "S-01",
+      "duration_seconds": 12,
+      "visual_prompt": "Direct opening frame, clean title treatment, high contrast editorial style.",
+      "on_screen_text": "Fixture Reaction Doctrine Clip",
+      "tool_target": "remotion"
+    },
+    {
+      "scene_id": "S-02",
+      "duration_seconds": 35,
+      "visual_prompt": "Slow paced narration frame with caption-led emphasis and subtle motion.",
+      "on_screen_text": "Read the system underneath.",
+      "tool_target": "heygen"
+    },
+    {
+      "scene_id": "S-03",
+      "duration_seconds": 45,
+      "visual_prompt": "Diagrammatic breakdown of surface moment to system layer to leverage.",
+      "on_screen_text": "Surface → System → Leverage",
+      "tool_target": "remotion"
+    },
+    {
+      "scene_id": "S-04",
+      "duration_seconds": 20,
+      "visual_prompt": "Closing CTA frame with restrained motion and clean typography.",
+      "on_screen_text": "Here, systems are what we build.",
+      "tool_target": "general"
+    }
+  ]
+}

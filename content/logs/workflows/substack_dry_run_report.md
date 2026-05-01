@@ -1,6 +1,6 @@
 # Substack Dry-Run Report
 
-Generated: 2026-05-01T17:43:03.467Z
+Generated: 2026-05-01T18:43:46.394Z
 File: content/articles/fixture-reaction-doctrine-clip.md
 Title: Fixture Reaction Doctrine Clip
 Slug: fixture-reaction-doctrine-clip

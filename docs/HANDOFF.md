@@ -164,3 +164,54 @@ Verification is recorded in the latest workflow logs:
 
 - `content/logs/workflows/mission_control_decision_import.md`
 - `content/logs/workflows/decision_import_summary.json`
+
+## Update — Dry-Run Asset Generation
+
+Changed:
+
+- Added `src/artifacts/assetGeneration.ts`.
+- Added `scripts/generate_assets.ts`.
+- Added `npm run generate:assets`.
+- Added `npm run handoff:decisions`.
+- Added `npm run handoff:decisions:assets`.
+
+Behavior:
+
+- `ready` artifacts generate assets with `asset_state = prepared`.
+- `scheduled_dry_run` artifacts generate assets with `asset_state = ready_for_distribution`.
+- `blocked`, `needs_rewrite`, `rejected`, `draft`, and `needs_review` artifacts are skipped.
+- Reaction Doctrine artifacts without a strong system-underneath section are skipped and logged.
+- No live publishing or external API calls are performed.
+
+Outputs:
+
+- `content/assets/{artifact_id}/video_script.md`
+- `content/assets/{artifact_id}/voice_script.txt`
+- `content/assets/{artifact_id}/hooks.json`
+- `content/assets/{artifact_id}/visual_prompts.json`
+- `content/assets/{artifact_id}/distribution_plan.json`
+- `content/assets/{artifact_id}/asset_manifest.json`
+- `content/logs/workflows/asset_generation_log.md`
+- `content/logs/workflows/asset_generation_log.json`
+- `content/logs/workflows/asset_generation_summary.json`
+
+Verification:
+
+- `npm run build`
+- `npm run handoff:decisions:assets`
+- `npm run brief`
+- secret scan for populated API key/password assignments
+- asset-generation source scan for live network/client calls
+
+Results:
+
+- Artifacts scanned: 3
+- Assets generated: 2
+- Assets skipped: 1
+- `ready` artifact generated `asset_state = prepared`
+- `scheduled_dry_run` artifact generated `asset_state = ready_for_distribution`
+- `needs_rewrite` artifact was skipped
+- Reaction Doctrine eligible artifact included a system-underneath section and generated assets
+- No live publishing occurred
+- No external API calls were added to the asset generation/import scripts
+- No populated secrets were found

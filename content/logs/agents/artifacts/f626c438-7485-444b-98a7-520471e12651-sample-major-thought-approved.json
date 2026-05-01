@@ -1,0 +1,19 @@
+{
+  "artifact_id": "f626c438-7485-444b-98a7-520471e12651",
+  "mission_id": "M-0501",
+  "artifact_type": "substack_packet",
+  "source": "SUBSTACK_ENGINE",
+  "status": "ready",
+  "lane": "Major AI OS",
+  "title": "Sample Major Thought Approved",
+  "source_url": "",
+  "github_path": "content/articles/sample-major-thought-approved.md",
+  "airtable_record_id": "",
+  "notion_page_id": "",
+  "requires_major_review": true,
+  "score": 70,
+  "confidence": 70,
+  "risk_level": "low",
+  "publish_mode": "review",
+  "next_action": "Prepare dry-run assets only."
+}

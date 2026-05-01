@@ -1,0 +1,36 @@
+{
+  "artifact_id": "3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+  "mission_id": "M-0501",
+  "title": "Fixture Reaction Doctrine Clip",
+  "lane": "Reaction Doctrine",
+  "source_artifact_path": "content/articles/fixture-reaction-doctrine-clip.md",
+  "generated_at": "2026-05-01T18:43:46.888Z",
+  "asset_state": "ready_for_distribution",
+  "dry_run_only": true,
+  "substack": {
+    "status": "draft_only",
+    "suggested_caption": "Fixture Reaction Doctrine Clip — tightened into a system-level signal.",
+    "asset_dependency": "video_script.md"
+  },
+  "instagram": {
+    "status": "draft_only",
+    "suggested_caption": "They saw the moment. We are reading the system.",
+    "asset_dependency": "hooks.json"
+  },
+  "youtube": {
+    "status": "draft_only",
+    "suggested_caption": "Fixture Reaction Doctrine Clip — tightened into a system-level signal.",
+    "asset_dependency": "video_script.md"
+  },
+  "x": {
+    "status": "draft_only",
+    "suggested_caption": "The real story is the system underneath.",
+    "asset_dependency": "hooks.json"
+  },
+  "fanbase": {
+    "status": "draft_only",
+    "suggested_caption": "A doctrine note from the system layer.",
+    "asset_dependency": "voice_script.txt"
+  },
+  "notes": "Dry-run only. No platform posting or external API calls."
+}

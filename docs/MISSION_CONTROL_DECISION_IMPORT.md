@@ -38,10 +38,44 @@ An array of decisions is also accepted.
 
 `publish_requested` never live publishes. It runs `publish:dry` behavior against the artifact `github_path` and writes a dry-run report.
 
+## Asset Generation After Decisions
+
+After decisions are imported, run:
+
+```bash
+npm run generate:assets
+```
+
+Eligible statuses:
+
+- `ready` -> asset generation state `prepared`
+- `scheduled_dry_run` -> asset generation state `ready_for_distribution`
+
+Skipped statuses:
+
+- `blocked`
+- `needs_rewrite`
+- `rejected`
+- `draft`
+- `needs_review`
+
+Reaction Doctrine artifacts must include a strong `system underneath` section. If the section is missing or weak, asset generation is skipped and logged as blocked.
+
+Combined command:
+
+```bash
+npm run handoff:decisions:assets
+```
+
+This imports Mission Control decisions and then generates dry-run assets. It does not publish live and does not call external APIs.
+
 ## Outputs
 
 - `content/logs/workflows/mission_control_decision_import.md`
 - `content/logs/workflows/decision_import_summary.json`
+- `content/logs/workflows/asset_generation_log.md`
+- `content/logs/workflows/asset_generation_log.json`
+- `content/logs/workflows/asset_generation_summary.json`
 
 ## Command
 
