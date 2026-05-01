@@ -36,6 +36,9 @@ export async function publishDryRun(input: z.infer<typeof PublishInput>): Promis
     "",
     "## Result",
     errors.length === 0 ? "- Ready for future dry-run publish flow." : "- Not ready to publish.",
+    lane === "Reaction Doctrine"
+      ? "- Reaction Doctrine: publish only the tightened Substack Article Version, not the preserved raw rant/source."
+      : "",
     "",
     "## Errors",
     ...(errors.length ? errors.map((error) => `- ${error}`) : ["- None"]),

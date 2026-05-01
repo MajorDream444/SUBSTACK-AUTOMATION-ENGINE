@@ -18,6 +18,29 @@ This scaffold builds dry-run foundations only:
 
 When Airtable `Status = Scheduled`, the engine should eventually publish automatically. This scaffold does not live publish. It only identifies readiness and writes dry-run reports.
 
+## Reaction Doctrine
+
+Reaction Doctrine packets are for YouTube videos, podcast clips, news segments, and viral cultural moments.
+
+They must include:
+
+- Source URL
+- Source title
+- Source transcript or summary
+- What they said
+- What they missed
+- The system underneath
+- Why it matters
+- 3–5 minute video script
+- Substack article version
+- Hook set
+- Distribution plan
+- Fact-check notes
+- Risk notes
+- System mapping
+
+The raw rant or source summary remains preserved. The publishable material is the tightened Substack article version.
+
 ## Source Of Truth
 
 GitHub is truth. Airtable tracks. Notion shows. Substack broadcasts.

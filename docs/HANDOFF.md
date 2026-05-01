@@ -44,3 +44,26 @@ Known gaps:
 - No Airtable writes are implemented.
 - No live Substack publishing is implemented.
 - Notion, n8n, Remotion rendering, HeyGen generation, and AI Voice Generator calls are templates/placeholders only.
+
+## Update — Reaction Doctrine Lane
+
+Changed:
+
+- Added `Reaction Doctrine` as a valid content lane.
+- Added Reaction Doctrine packet sections for source URL, source title, source transcript/summary, what they said, what they missed, the system underneath, why it matters, 3–5 minute video script, Substack article version, hook set, distribution plan, fact-check notes, risk notes, and system mapping.
+- Added optional generator flags: `--source-url` and `--source-title`.
+- Updated dry-run publisher to remind agents that Reaction Doctrine publishes only the tightened Substack Article Version, not the preserved raw rant/source.
+
+Verification:
+
+- `npm run generate:article -- --file content/raw/sample-reaction-doctrine.txt --title "Sample Reaction Doctrine" --lane "Reaction Doctrine" --source-url "https://example.com/source" --source-title "Example Cultural Clip"`
+- `npm run publish:dry -- --file content/articles/sample-reaction-doctrine.md`
+- `npm run build`
+- secret scan for populated API key/password assignments
+
+Result:
+
+- Reaction Doctrine packet generated at `content/articles/sample-reaction-doctrine.md`.
+- Dry-run report generated and passed.
+- TypeScript build passed.
+- No populated secrets were found.

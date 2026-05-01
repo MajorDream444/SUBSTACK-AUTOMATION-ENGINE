@@ -38,6 +38,12 @@ Fill only the keys needed for the command you are running. Do not commit `.env`.
 npm run generate:article -- --file content/raw/sample-major-thought.txt --title "Sample Major Thought" --lane "Major AI OS productization"
 ```
 
+Reaction Doctrine packets can include source metadata:
+
+```bash
+npm run generate:article -- --file content/raw/reaction-source.txt --title "Reaction Title" --lane "Reaction Doctrine" --source-url "https://example.com/source" --source-title "Original Source Title"
+```
+
 3. Dry-run the Substack publish check:
 
 ```bash
@@ -59,6 +65,17 @@ npm run sync:airtable
 ## Future Live Publishing Workflow
 
 When live publishing is built later, Airtable records with `Status = Scheduled` will become automatic publish candidates. Live mode must remain opt-in and must never publish blocked or unmapped content.
+
+## Reaction Doctrine
+
+Reaction Doctrine turns YouTube videos, podcast clips, news segments, and viral cultural moments into system-level commentary. It does not become generic political commentary.
+
+Rules:
+
+- Extract the system underneath the clip.
+- Map back to Major AI OS, culture, doctrine, diaspora, media, or leverage.
+- Preserve the raw rant/source as original material.
+- Publish only the tightened Substack article version.
 
 ## Safety Rules
 

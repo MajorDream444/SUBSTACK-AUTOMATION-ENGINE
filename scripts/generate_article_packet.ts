@@ -28,7 +28,9 @@ if (!file) {
 const outputPath = await generateArticlePacket({
   file,
   title: typeof args.title === "string" ? args.title : undefined,
-  lane: typeof args.lane === "string" ? args.lane : undefined
+  lane: typeof args.lane === "string" ? args.lane : undefined,
+  sourceUrl: typeof args["source-url"] === "string" ? args["source-url"] : undefined,
+  sourceTitle: typeof args["source-title"] === "string" ? args["source-title"] : undefined
 });
 
 console.log(`Created ${outputPath}`);

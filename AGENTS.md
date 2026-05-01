@@ -26,6 +26,8 @@ Include:
 
 - No unmapped content can publish.
 - If lane is missing or invalid, set status to `blocked`.
+- Reaction Doctrine must extract the system underneath the source and must not become generic political commentary.
+- Reaction Doctrine preserves raw rant/source material and publishes only the tightened version.
 - Do not expose or log secrets.
 - Do not add real credentials to repo files.
 

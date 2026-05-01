@@ -24,3 +24,17 @@ ChatGPT plans. Codex builds. OpenClaw runs. Hanzo thinks. GitHub remembers. Airt
 3. SAF narrative / research
 4. Major AI OS productization
 5. Personal doctrine / 10 Pillars
+6. Reaction Doctrine
+
+## Reaction Doctrine Map
+
+Reaction Doctrine maps clips and cultural moments back to:
+
+- Major AI OS
+- culture
+- doctrine
+- diaspora
+- media
+- leverage
+
+It must extract the system underneath the source instead of drifting into generic political commentary.

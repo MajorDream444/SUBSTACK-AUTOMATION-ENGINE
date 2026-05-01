@@ -3,7 +3,8 @@ export const VALID_LANES = [
   "Contour authority / sales",
   "SAF narrative / research",
   "Major AI OS productization",
-  "Personal doctrine / 10 Pillars"
+  "Personal doctrine / 10 Pillars",
+  "Reaction Doctrine"
 ] as const;
 
 export type ContentLane = (typeof VALID_LANES)[number];

@@ -1,15 +1,16 @@
 # Substack Dry-Run Report
 
-Generated: 2026-05-01T01:38:18.326Z
-File: content/articles/sample-major-thought.md
-Title: Sample Major Thought
-Slug: sample-major-thought
-Lane: Major AI OS productization
+Generated: 2026-05-01T04:41:57.809Z
+File: content/articles/sample-reaction-doctrine.md
+Title: Sample Reaction Doctrine
+Slug: sample-reaction-doctrine
+Lane: Reaction Doctrine
 Status: draft
 Publish mode: dry-run only
 
 ## Result
 - Ready for future dry-run publish flow.
+- Reaction Doctrine: publish only the tightened Substack Article Version, not the preserved raw rant/source.
 
 ## Errors
 - None

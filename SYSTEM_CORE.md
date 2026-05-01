@@ -55,5 +55,18 @@ Every piece must map to one of:
 3. SAF narrative / research
 4. Major AI OS productization
 5. Personal doctrine / 10 Pillars
+6. Reaction Doctrine
 
 If a piece does not map to one of those lanes, mark it `blocked` and do not publish.
+
+## Reaction Doctrine
+
+Purpose: turn YouTube videos, podcast clips, news segments, and viral cultural moments into system-level commentary.
+
+Rules:
+
+- Do not become generic political commentary.
+- Always extract the system underneath the clip.
+- Always map back to Major AI OS, culture, doctrine, diaspora, media, or leverage.
+- Preserve raw rant as original source.
+- Publish only the tightened version.
