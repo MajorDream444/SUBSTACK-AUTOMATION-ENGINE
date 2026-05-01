@@ -1,0 +1,17 @@
+Source URL: https://example.com/reaction-source
+Source Title: Example Viral Culture Clip
+
+Source transcript or summary:
+A viral clip frames the moment as a personal conflict, but the deeper issue is how platforms turn emotional visibility into leverage.
+
+What they said:
+They framed the clip as a simple argument about who was right in the moment.
+
+What they missed:
+They missed the incentive system that rewards conflict, compression, and identity performance.
+
+The system underneath:
+A media leverage loop where pain becomes attention, attention becomes distribution, and distribution becomes market power.
+
+Why it matters:
+If builders cannot read the system underneath viral moments, they become content for the machine instead of operators of their own signal.

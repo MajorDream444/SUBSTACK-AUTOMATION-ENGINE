@@ -11,29 +11,33 @@ Substack Automation Engine scaffold is active in dry-run mode.
 
 ## Content Actions
 
-- Raw thoughts: 1
-- Article packets: 1
+- Raw thoughts: 3
+- Article packets: 3
 - Published records: 0
-- Workflow logs: 1
+- Workflow logs: 5
 
 ## Repo Changes
 
 ```
-?? .env.example
-?? .gitignore
-?? AGENTS.md
-?? CODEX.md
-?? README.md
-?? SYSTEM_CORE.md
-?? content/
-?? docs/
-?? package-lock.json
-?? package.json
-?? scripts/
-?? src/
-?? tasks/
-?? templates/
-?? tsconfig.json
+M README.md
+ M content/logs/daily/2026-05-01-daily-brief.md
+ M content/logs/workflows/airtable_audit.md
+ M content/logs/workflows/airtable_snapshot.json
+ M content/logs/workflows/substack_dry_run_report.md
+ M docs/AIRTABLE_SCHEMA.md
+ M docs/SUBSTACK_AUTOMATION_ENGINE.md
+ M scripts/generate_article_packet.ts
+ M scripts/publish_substack_dry_run.ts
+ M scripts/sync_airtable.ts
+ M src/airtable/mapper.ts
+ M src/substack/dryRunPublisher.ts
+?? content/articles/fixture-reaction-doctrine-clip.md
+?? content/logs/workflows/fixture-reaction-doctrine-clip-reaction-doctrine.md
+?? content/logs/workflows/reaction_doctrine_pipeline.md
+?? content/raw/fixture-reaction-doctrine-clip-source.txt
+?? content/research/reaction_doctrine_airtable_fixture.json
+?? src/content/reactionDoctrine.ts
+?? src/utils/cli.ts
 ```
 
 ## Airtable State

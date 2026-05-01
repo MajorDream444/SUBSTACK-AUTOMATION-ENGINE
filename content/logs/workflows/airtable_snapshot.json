@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "id": "recReactionDoctrineFixture",
+    "createdTime": "2026-05-01T00:00:00.000Z",
+    "Title": "Fixture Reaction Doctrine Clip",
+    "Status": "Scheduled",
+    "Lane": "Reaction Doctrine",
+    "slug": "fixture-reaction-doctrine-clip",
+    "tags": "reaction doctrine, culture, media, leverage",
+    "publish date": "2026-05-01",
+    "source_url": "https://example.com/reaction-source",
+    "source_title": "Example Viral Culture Clip",
+    "source_summary": "A viral clip frames the moment as a personal conflict, but the deeper issue is how platforms turn emotional visibility into leverage.",
+    "What They Said": "They framed the clip as a simple argument about who was right in the moment.",
+    "What They Missed": "They missed the incentive system that rewards conflict, compression, and identity performance.",
+    "The System Underneath": "A media leverage loop where pain becomes attention, attention becomes distribution, and distribution becomes market power.",
+    "Why It Matters": "If builders cannot read the system underneath viral moments, they become content for the machine instead of operators of their own signal.",
+    "Fact-Check Notes": "Verify source date, speaker names, clip context, and whether the source has been edited.",
+    "Risk Notes": "Avoid defamation, avoid claims about private intent, and avoid turning the analysis into generic political commentary.",
+    "Substack URL": "",
+    "Raw Conversational Edit": "The clip is not the story. The system underneath the clip is the story.",
+    "Polished Editorial Edit": "The viral moment reveals a media leverage loop, not just a personal conflict.",
+    "Hooks": "They saw the clip. They missed the machine.",
+    "Video Script": "Open with the clip, then explain the system underneath.",
+    "Distribution Plan": "Substack, YouTube, X, Instagram, Remotion, HeyGen."
+  }
+]

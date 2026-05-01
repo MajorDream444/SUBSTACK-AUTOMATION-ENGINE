@@ -41,6 +41,8 @@ They must include:
 
 The raw rant or source summary remains preserved. The publishable material is the tightened Substack article version.
 
+When a Scheduled Airtable record uses `Reaction Doctrine` and includes `source_url`, the dry-run pipeline locates or generates the article packet, validates Reaction Doctrine fields, runs publish dry-run, creates a 3–5 minute video script, creates 3 short clip hooks, and writes workflow logs. It does not publish live.
+
 ## Source Of Truth
 
 GitHub is truth. Airtable tracks. Notion shows. Substack broadcasts.

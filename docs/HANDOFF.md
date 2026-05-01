@@ -67,3 +67,35 @@ Result:
 - Dry-run report generated and passed.
 - TypeScript build passed.
 - No populated secrets were found.
+
+## Update — Reaction Doctrine Airtable Dry-Run Pipeline
+
+Changed:
+
+- Added `source_url` and `source_title` support to the Airtable mapper.
+- Added Reaction Doctrine record validation for Scheduled Airtable records.
+- Connected Scheduled Reaction Doctrine records with `source_url` to the dry-run pipeline.
+- The pipeline now locates or generates an article packet, runs publish dry-run, creates a 3–5 minute video script, creates 3 short clip hooks, and writes workflow logs.
+- Added `content/research/reaction_doctrine_airtable_fixture.json` as a sample Airtable-style fixture.
+- Added `content/logs/workflows/reaction_doctrine_pipeline.md` and per-record workflow logs.
+
+Verification:
+
+- `npm run build`
+- `npm run sync:airtable -- --fixture content/research/reaction_doctrine_airtable_fixture.json`
+- `npm run publish:dry -- --file content/articles/fixture-reaction-doctrine-clip.md`
+- `npm run brief`
+- `npm run sync:airtable`
+- final fixture rerun: `npm run sync:airtable -- --fixture content/research/reaction_doctrine_airtable_fixture.json`
+- final brief rerun: `npm run brief`
+
+Results:
+
+- TypeScript build passed.
+- Fixture pipeline processed 1 Scheduled Reaction Doctrine candidate.
+- Article packet located/generated at `content/articles/fixture-reaction-doctrine-clip.md`.
+- Publish dry-run passed.
+- Workflow log created at `content/logs/workflows/fixture-reaction-doctrine-clip-reaction-doctrine.md`.
+- Reaction Doctrine pipeline summary created at `content/logs/workflows/reaction_doctrine_pipeline.md`.
+- Daily brief regenerated.
+- No live publishing, live posting, or Airtable writes were attempted.

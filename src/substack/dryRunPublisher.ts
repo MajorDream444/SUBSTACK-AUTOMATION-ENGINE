@@ -8,6 +8,27 @@ const PublishInput = z.object({
   file: z.string().min(1)
 });
 
+const REACTION_DOCTRINE_SECTIONS = [
+  "Source URL",
+  "Source Title",
+  "Source Transcript or Summary",
+  "What They Said",
+  "What They Missed",
+  "The System Underneath",
+  "Why It Matters",
+  "3–5 Minute Video Script",
+  "Substack Article Version",
+  "Reaction Hook Set",
+  "Reaction Distribution Plan",
+  "Fact-Check Notes",
+  "Risk Notes",
+  "Reaction System Mapping"
+];
+
+function missingSections(markdown: string, headings: string[]): string[] {
+  return headings.filter((heading) => !markdown.includes(`## ${heading}`));
+}
+
 export async function publishDryRun(input: z.infer<typeof PublishInput>): Promise<string> {
   const parsed = PublishInput.parse(input);
   const markdown = await readText(parsed.file);
@@ -22,6 +43,11 @@ export async function publishDryRun(input: z.infer<typeof PublishInput>): Promis
   if (!slug) errors.push("Missing slug.");
   if (!lane || !isValidLane(lane)) errors.push(`Missing or invalid lane: ${lane || "missing"}.`);
   if (status === "blocked") errors.push("Status is blocked.");
+  const reactionMissingSections =
+    lane === "Reaction Doctrine" ? missingSections(markdown, REACTION_DOCTRINE_SECTIONS) : [];
+  if (reactionMissingSections.length > 0) {
+    errors.push(`Reaction Doctrine packet missing sections: ${reactionMissingSections.join(", ")}`);
+  }
 
   const report = [
     "# Substack Dry-Run Report",
@@ -39,6 +65,14 @@ export async function publishDryRun(input: z.infer<typeof PublishInput>): Promis
     lane === "Reaction Doctrine"
       ? "- Reaction Doctrine: publish only the tightened Substack Article Version, not the preserved raw rant/source."
       : "",
+    lane === "Reaction Doctrine" ? "" : "",
+    lane === "Reaction Doctrine" ? "## Reaction Doctrine Dry-Run" : "",
+    lane === "Reaction Doctrine"
+      ? reactionMissingSections.length === 0
+        ? "- Required Reaction Doctrine sections are present."
+        : `- Missing sections: ${reactionMissingSections.join(", ")}`
+      : "",
+    lane === "Reaction Doctrine" ? "- Live posting remains disabled." : "",
     "",
     "## Errors",
     ...(errors.length ? errors.map((error) => `- ${error}`) : ["- None"]),
