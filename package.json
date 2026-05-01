@@ -1,0 +1,27 @@
+{
+  "name": "substack-automation-engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Major AI OS Substack Automation Engine.",
+  "scripts": {
+    "build": "tsc",
+    "generate:article": "tsx scripts/generate_article_packet.ts",
+    "publish:dry": "tsx scripts/publish_substack_dry_run.ts",
+    "sync:airtable": "tsx scripts/sync_airtable.ts",
+    "brief": "tsx scripts/generate_daily_brief.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "fs-extra": "^11.2.0",
+    "gray-matter": "^4.0.3",
+    "slugify": "^1.6.6",
+    "tsx": "^4.19.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  }
+}

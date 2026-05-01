@@ -1,0 +1,1 @@
+Major should not have to keep rebuilding the same thought from scratch. If the idea matters, the system should catch it, shape it, map it to the right lane, and turn it into a public signal without losing the original voice.
