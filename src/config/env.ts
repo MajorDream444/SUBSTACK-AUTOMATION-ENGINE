@@ -16,7 +16,8 @@ export const env = {
   openaiApiKey: process.env.OPENAI_API_KEY ?? "",
   youtubeApiKey: process.env.YOUTUBE_API_KEY ?? "",
   xApiKey: process.env.X_API_KEY ?? "",
-  igAccessToken: process.env.IG_ACCESS_TOKEN ?? ""
+  igAccessToken: process.env.IG_ACCESS_TOKEN ?? "",
+  missionControlAssetDecisionsPath: process.env.MISSION_CONTROL_ASSET_DECISIONS_PATH ?? ""
 };
 
 export function hasAirtableCredentials(): boolean {

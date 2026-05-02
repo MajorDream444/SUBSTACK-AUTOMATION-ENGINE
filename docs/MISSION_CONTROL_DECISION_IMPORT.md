@@ -69,6 +69,29 @@ npm run handoff:decisions:assets
 
 This imports Mission Control decisions and then generates dry-run assets. It does not publish live and does not call external APIs.
 
+## Asset Queue Decisions From Mission Control
+
+After Mission Control reviews prepared or distribution-ready assets, it may export:
+
+```text
+content/logs/workflows/asset_queue_decisions.json
+```
+
+Import those decisions with:
+
+```bash
+MISSION_CONTROL_ASSET_DECISIONS_PATH="/absolute/path/to/asset_queue_decisions.json" npm run import:asset-decisions
+```
+
+This updates local dry-run asset workflow state only. It does not mutate generated asset files, render video/audio, publish live, or call external APIs.
+
+Outputs:
+
+- `content/logs/workflows/mission_control_asset_queue_decisions.json`
+- `content/logs/workflows/mission_control_asset_queue_decisions.md`
+- `content/logs/workflows/asset_workflow_state.json`
+- `content/logs/workflows/asset_queue_decision_import_summary.json`
+
 ## Outputs
 
 - `content/logs/workflows/mission_control_decision_import.md`

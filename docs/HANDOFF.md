@@ -215,3 +215,31 @@ Results:
 - No live publishing occurred
 - No external API calls were added to the asset generation/import scripts
 - No populated secrets were found
+
+## Update - Mission Control Asset Queue Decision Import
+
+Added:
+
+- `src/artifacts/assetDecisionImport.ts`
+- `scripts/import_asset_queue_decisions.ts`
+- `docs/MISSION_CONTROL_ASSET_DECISION_IMPORT.md`
+- `npm run import:asset-decisions`
+- `npm run handoff:asset-decisions`
+- `npm run handoff:full:local`
+
+Behavior:
+
+- Reads Mission Control `asset_queue_decisions.json` from `MISSION_CONTROL_ASSET_DECISIONS_PATH` or `--file`.
+- Copies the raw imported decision file into `content/logs/workflows/mission_control_asset_queue_decisions.json`.
+- Writes a human report to `content/logs/workflows/mission_control_asset_queue_decisions.md`.
+- Updates dry-run state in `content/logs/workflows/asset_workflow_state.json`.
+- Writes `content/logs/workflows/asset_queue_decision_import_summary.json`.
+- De-dupes by `asset_decision_id`.
+- Newest decision by `decided_at` becomes the artifact `current_status`.
+
+Safety:
+
+- No generated asset files are mutated.
+- No rendering.
+- No live publishing.
+- No external API calls.

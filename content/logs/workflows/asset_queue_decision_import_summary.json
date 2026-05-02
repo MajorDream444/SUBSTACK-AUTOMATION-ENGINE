@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-02T00:46:37.981Z",
+  "source": "MISSION_CONTROL",
+  "source_path": "/Users/majordreamwilliams/Documents/New project 2/content/logs/workflows/asset_queue_decisions.json",
+  "decisions_in_file": 2,
+  "new_decisions_imported": 0,
+  "duplicates_ignored": 2,
+  "unique_decisions_total": 2,
+  "artifacts_tracked": 2,
+  "by_decision": {
+    "review_assets": 1,
+    "approve_for_publish_queue_later": 1
+  },
+  "by_asset_workflow_status": {
+    "publish_queue_candidate": 1,
+    "under_review": 1
+  },
+  "live_publish_attempted": false,
+  "render_attempted": false,
+  "external_api_calls": false
+}

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-05-02T00:33:47.113Z",
+  "mode": "local_only",
+  "target_path": "content/logs/workflows/asset_queue_decisions.json",
+  "decisions": [
+    {
+      "asset_decision_id": "AD-20260502-011100-AS01",
+      "artifact_id": "f626c438-7485-444b-98a7-520471e12651",
+      "mission_id": "M-0501",
+      "title": "Sample Major Thought Approved",
+      "lane": "Major AI OS",
+      "asset_state": "prepared",
+      "decision": "review_assets",
+      "decided_by": "Major",
+      "decided_at": "2026-05-02T01:11:00.000Z",
+      "reason": "Fixture decision for prepared asset review.",
+      "source": "MISSION_CONTROL",
+      "execution_mode": "local_only"
+    },
+    {
+      "asset_decision_id": "AD-20260502-011101-AS02",
+      "artifact_id": "3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+      "mission_id": "M-0501",
+      "title": "Fixture Reaction Doctrine Clip",
+      "lane": "Reaction Doctrine",
+      "asset_state": "ready_for_distribution",
+      "decision": "approve_for_publish_queue_later",
+      "decided_by": "Major",
+      "decided_at": "2026-05-02T01:11:01.000Z",
+      "reason": "Fixture decision for later publish queue approval.",
+      "source": "MISSION_CONTROL",
+      "execution_mode": "local_only"
+    }
+  ]
+}

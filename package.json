@@ -13,8 +13,11 @@
     "export:mission-control": "tsx scripts/export_mission_control.ts",
     "import:decisions": "tsx scripts/import_mission_control_decisions.ts",
     "generate:assets": "tsx scripts/generate_assets.ts",
+    "import:asset-decisions": "tsx scripts/import_asset_queue_decisions.ts",
     "handoff:decisions": "npm run import:decisions",
-    "handoff:decisions:assets": "npm run handoff:decisions && npm run generate:assets"
+    "handoff:decisions:assets": "npm run handoff:decisions && npm run generate:assets",
+    "handoff:asset-decisions": "npm run import:asset-decisions",
+    "handoff:full:local": "npm run handoff:decisions:assets && npm run import:asset-decisions"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
