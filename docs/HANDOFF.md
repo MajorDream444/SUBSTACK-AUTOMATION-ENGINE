@@ -243,3 +243,30 @@ Safety:
 - No rendering.
 - No live publishing.
 - No external API calls.
+
+## Update - Render Queue Handoff Export
+
+Added:
+
+- `src/artifacts/renderQueueHandoff.ts`
+- `scripts/export_render_queue_handoff.ts`
+- `docs/RENDER_QUEUE_HANDOFF.md`
+- `npm run export:render-queue`
+
+Behavior:
+
+- Reads `content/logs/workflows/asset_workflow_state.json`.
+- Includes only artifacts with `current_status = render_queue_candidate`.
+- Excludes `publish_queue_candidate`, `under_review`, `held`, `needs_asset_rewrite`, and `blocked`.
+- Writes:
+  - `content/logs/workflows/render_queue_handoff.json`
+  - `content/logs/workflows/render_queue_handoff.md`
+  - `content/logs/workflows/render_queue_handoff_summary.json`
+- Preserves an existing `render_queue_id` for the same `artifact_id`.
+- Logs missing required asset files as skipped candidates instead of queueing them.
+
+Safety:
+
+- Local manifest only.
+- No generated asset files are mutated.
+- No rendering, browser automation, publishing, external APIs, or secrets.

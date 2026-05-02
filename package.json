@@ -14,6 +14,7 @@
     "import:decisions": "tsx scripts/import_mission_control_decisions.ts",
     "generate:assets": "tsx scripts/generate_assets.ts",
     "import:asset-decisions": "tsx scripts/import_asset_queue_decisions.ts",
+    "export:render-queue": "tsx scripts/export_render_queue_handoff.ts",
     "handoff:decisions": "npm run import:decisions",
     "handoff:decisions:assets": "npm run handoff:decisions && npm run generate:assets",
     "handoff:asset-decisions": "npm run import:asset-decisions",

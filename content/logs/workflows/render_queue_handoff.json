@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-05-02T05:06:11.716Z",
+  "source": "SUBSTACK_ENGINE",
+  "source_state_path": "content/logs/workflows/asset_workflow_state.json",
+  "total_workflow_artifacts": 2,
+  "render_queue_candidates": 0,
+  "queued": 0,
+  "skipped": 0,
+  "excluded": {
+    "publish_queue_candidate": 1,
+    "under_review": 1
+  },
+  "live_publish_attempted": false,
+  "render_attempted": false,
+  "external_api_calls": false,
+  "queue_items": [],
+  "skipped_candidates": []
+}
