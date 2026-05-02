@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-05-02T08:07:10.931Z",
+  "source": "SUBSTACK_ENGINE",
+  "source_state_path": "content/logs/workflows/asset_workflow_state.json",
+  "total_workflow_artifacts": 2,
+  "publish_queue_candidates": 1,
+  "queued": 1,
+  "skipped": 0,
+  "excluded": {
+    "under_review": 1
+  },
+  "live_publish_attempted": false,
+  "render_attempted": false,
+  "external_api_calls": false,
+  "queue_items": [
+    {
+      "publish_queue_id": "PQ-3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+      "artifact_id": "3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+      "mission_id": "M-0501",
+      "title": "Fixture Reaction Doctrine Clip",
+      "lane": "Reaction Doctrine",
+      "asset_state": "ready_for_distribution",
+      "asset_workflow_status": "publish_queue_candidate",
+      "source_asset_folder": "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d",
+      "video_script_path": "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/video_script.md",
+      "voice_script_path": "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/voice_script.txt",
+      "hooks_path": "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/hooks.json",
+      "visual_prompts_path": "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/visual_prompts.json",
+      "distribution_plan_path": "content/assets/3dd5955e-d00d-45bf-af2c-5740f1046b0d/distribution_plan.json",
+      "recommended_platforms": [
+        "substack",
+        "instagram",
+        "youtube",
+        "x",
+        "fanbase"
+      ],
+      "publish_status": "queued_dry_run",
+      "execution_mode": "local_only",
+      "created_at": "2026-05-02T08:06:50.135Z"
+    }
+  ],
+  "skipped_candidates": []
+}

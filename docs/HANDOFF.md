@@ -270,3 +270,32 @@ Safety:
 - Local manifest only.
 - No generated asset files are mutated.
 - No rendering, browser automation, publishing, external APIs, or secrets.
+
+## Update - Publish Queue Handoff Export
+
+Added:
+
+- `src/artifacts/publishQueueHandoff.ts`
+- `scripts/export_publish_queue_handoff.ts`
+- `docs/PUBLISH_QUEUE_HANDOFF.md`
+- `npm run export:publish-queue`
+- `npm run export:queues`
+
+Behavior:
+
+- Reads `content/logs/workflows/asset_workflow_state.json`.
+- Includes only artifacts with `current_status = publish_queue_candidate`.
+- Excludes `render_queue_candidate`, `under_review`, `held`, `needs_asset_rewrite`, and `blocked`.
+- Writes:
+  - `content/logs/workflows/publish_queue_handoff.json`
+  - `content/logs/workflows/publish_queue_handoff.md`
+  - `content/logs/workflows/publish_queue_handoff_summary.json`
+- Preserves an existing `publish_queue_id` for the same `artifact_id`.
+- Logs missing required asset files as skipped candidates instead of queueing them.
+- Recommends platforms from local asset availability only.
+
+Safety:
+
+- Local manifest only.
+- No generated asset files are mutated.
+- No publishing, rendering, browser automation, external APIs, or secrets.
