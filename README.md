@@ -1,3 +1,5 @@
+[![Edit on Hanzo](https://hanzo.ai/badges/edit-on-hanzo.svg)](https://hanzo.app/dev?repo=https%3A%2F%2Fgithub.com%2FMajorDream444%2FSUBSTACK-AUTOMATION-ENGINE)
+
 # SUBSTACK-AUTOMATION-ENGINE
 
 The Substack Automation Engine turns Major Dream Williams' raw thoughts into reusable article packets, GitHub markdown records, Airtable pipeline audits, dry-run publishing reports, video/voice asset prompts, and local daily briefs.
